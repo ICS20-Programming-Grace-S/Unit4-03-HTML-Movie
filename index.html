@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Meta Data --> 
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Grace S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+
+    <!-- Link to CSS file --> 
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Title --> 
+    <title>Movie, with JS</title>
+  </head>
+  <body>
+
+    <!-- Link to js file -->
+    <script src="./js/script.js"></script>
+    <h1>Find your Age Appropriate to Go Watch</h1>
+		<table>
+			<tr>
+				<td>
+
+          <!-- User Input --> 
+					<h3>Enter your age:</h3>
+					<form action="javascript:displayRestriction()">						
+						<label for="celsius">Temperature in celsius:</label>
+						<input type="number" step="any" id="degCelsius" placeholder="Enter Temperature...">
+            <br>
+            <br>
+						<input type="submit" value="Display Temperature Results">
+					</form>
+				</td>
+				<td>
+
+          <!-- Image -->
+					<img src="./images/temperature.jpg" alt="Guess" width="50%">
+				</td>
+			</tr>
+		</table>
+    <br>
+    
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="resultsCelsius">
+			</div>
+		</div>
+  </body>
+</html>
