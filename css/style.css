@@ -5,14 +5,13 @@
 */
 
 body {
-  background-color: rgb(107, 156, 137);
+  background-color: rgb(191, 49, 47);
 }
 
 h1 {
-	background-color: rgb(173, 252, 215);
+	background-color: rgb(236, 203, 91);
 	color: hsl(0, 0%, 0%);
 	padding: 40px;
-	text-align: center;
 }
 
 div {
@@ -22,6 +21,6 @@ div {
 }
 
 #display-results{
-  background-color: #c2fde1;
+  background-color: rgb(236, 203, 91);
 	font-size: 20px;
 }

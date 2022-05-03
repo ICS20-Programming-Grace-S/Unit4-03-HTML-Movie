@@ -25,25 +25,25 @@
 
     <!-- Link to js file -->
     <script src="./js/script.js"></script>
-    <h1>Find your Age Appropriate to Go Watch</h1>
+    <h1>Find your Age Appropriate Movie to Go Watch</h1>
 		<table>
 			<tr>
 				<td>
 
           <!-- User Input --> 
-					<h3>Enter your age:</h3>
-					<form action="javascript:displayRestriction()">						
-						<label for="celsius">Temperature in celsius:</label>
-						<input type="number" step="any" id="degCelsius" placeholder="Enter Temperature...">
+					<h3>Find what Movie you are Allowed to Watch! </h3>
+					<form action="javascript:displayAge()">						
+						<label for="celsius">Enter your Age:</label>
+						<input type="number" step="any" id="age" placeholder="Enter Age...">
             <br>
             <br>
-						<input type="submit" value="Display Temperature Results">
+						<input type="submit" value="Display">
 					</form>
 				</td>
 				<td>
 
           <!-- Image -->
-					<img src="./images/temperature.jpg" alt="Guess" width="50%">
+					<img src="./images/movies.jpg" alt="movie" width="30%">
 				</td>
 			</tr>
 		</table>
@@ -51,7 +51,7 @@
     
 		<!-- Create a space where the user information will be displayed -->
 		<div id="display-results">
-			<div id="resultsCelsius">
+			<div id="resultAge">
 			</div>
 		</div>
   </body>

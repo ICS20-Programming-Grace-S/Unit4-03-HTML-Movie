@@ -7,32 +7,40 @@
 /**
  * This function displays a response based on the guessed number
  */
-function displayCelsius () {
+function displayAge () {
   // initialize variables
   let response = ""
-	const MIN= 15
-  const MIN_TEMP = -50
-  const MAX = 50
+	const MIN_R = 18
+  const MIN_PG_13 = 13
+  const MIN_G = 10
   
 	// get user input for degrees celsius
-	let degCelsius = parseInt(document.getElementById('degCelsius').value)
+	let age = parseInt(document.getElementById('age').value)
 
 
   // determine the response based on the guessed number
-	if (degCelsius >= MAX) {
-    response = " Something is off... either glaciers are disappearing or you're a liar!!!!!!!!!! "
 
-  } else if (degCelsius <= MIN_TEMP){
-    response =" It’s extremely cold outside. Are you sure you're still alive? "
-
-  }  else if (degCelsius >= MIN) {
-		response = " It is going to be a hot day!!! Wear sunglasses and light outerwear. "
+  if (age >= 0) {
+   if (age == 0) {
+    response= "Oops looks like you can't input zero."
+    
+    } else if (age >= MIN_R) {
+      response = " You can see an R rated movie. "
+  
+    } else if (age >= MIN_PG_13){
+      response =" You can see PG-13 movie. "
+  
+    }  else if (age >= MIN_G) {
+  		response = " You can see a G or PG movie. "
+    }
+  	//if not says incorrect	
+    else {
+      response = " You are not old enough to see a movie alone. "
+    }
+  } else {
+    response = " Did you think not inputting your age was a witty idea? Try again. "
   }
-	//if not says incorrect	
-	else  {
-		response = " It is going to be a cold day!!! Wear a jacket or sweater. "
-	}
   
   // display the results
-  document.getElementById('resultsCelsius').innerHTML = response
+  document.getElementById('resultAge').innerHTML = response
 }
