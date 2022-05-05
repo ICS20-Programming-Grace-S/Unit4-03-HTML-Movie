@@ -14,27 +14,26 @@ function displayAge () {
   const MIN_PG_13 = 13
   const MIN_G = 10
   
-	// get user input for degrees celsius
+	// get user input for age
 	let age = parseInt(document.getElementById('age').value)
 
 
-  // determine the response based on the guessed number
+  // determine the response based on the given age
 
   if (age >= 0) {
    if (age == 0) {
-    response= "Oops looks like you can't input zero."
+    response= " Oops looks like you can't input zero."
     
     } else if (age >= MIN_R) {
       response = " You can see an R rated movie. "
   
     } else if (age >= MIN_PG_13){
-      response =" You can see PG-13 movie. "
+      response = " You can see PG-13 movie. "
   
     }  else if (age >= MIN_G) {
   		response = " You can see a G or PG movie. "
-    }
-  	//if not says incorrect	
-    else {
+     
+    }  else {
       response = " You are not old enough to see a movie alone. "
     }
   } else {
